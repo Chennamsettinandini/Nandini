@@ -1,0 +1,108 @@
+h1 {
+    color: rgb(56, 88, 94);
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+  }
+  input {
+    width: 500px; 
+    padding: 10px;
+    border: 6px solid #ccc;
+  }
+  .bi {
+  font-size: 40px; /* Adjust size */
+  color: #c5ccd3; /* Change color */
+  margin-right: 10px; /* Add spacing */
+  margin-top: 0%;
+
+  }
+  .main {
+    width: 700px;
+    height: 550px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8e9eb;
+   text-align: center;
+   margin-top: 300px;
+   border-radius: 5px;   
+  }
+  p{
+    font-size: 20px;
+  }
+  .sub{
+    text-align: center;
+    padding:50px;
+  }
+#fgot {
+  margin-left: 400px; /* Pushes "Forgot Password?" to the right */
+  color: rgb(148, 14, 14);
+  cursor: pointer;
+}
+
+#forgot:hover {
+  text-decoration: underline;
+}
+
+#forgot:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+  input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  button {
+    width: 300px;
+    padding: 12px;
+    background-color: #ce2d27;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .captcha-container {
+ display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px; /* Adds space between captcha text and input */
+}
+#skip
+{
+  margin-top: 0%;
+}
+
+input[formControlName="captchaInput"] {
+  flex: 1; /* Ensures input field takes up remaining space */
+  padding: 5px;
+  border: 1px solid #ccc;
+  width:70px;
+  border-radius: 5px;
+}
+  
+  button:hover {
+    background-color: #6ca35e;
+  }
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+span{
+    font-style: italic;
+     padding:7px;
+}
+a{
+  text-decoration: underline;
+}
+a:hover{
+ color:darkgreen;
+}
+body{
+  background-color: #d8dbdf;
+}

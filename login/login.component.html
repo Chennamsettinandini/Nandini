@@ -1,0 +1,24 @@
+<div class="main">
+  <div class="sub">
+    <a class="logo cursor-pointer" [routerLink]="['/skip']">
+      <span><i class="bi bi-x" style="margin-left:620px;color:rgb(90, 87, 87)"></i></span>
+    </a>
+    
+    <h1>Login</h1>
+    <p>Welcome back! Please login to your account.</p>
+
+    <form [formGroup]="loginForm">
+      <input type="text" size="30" formControlName="email" placeholder="Enter email" required>
+      <input type="password" size="30" formControlName="password" placeholder="Enter password" required><br>
+      <br>
+  <p id="fgot"><a class="cursor-pointer ml-2" [routerLink]="['/forgot']">Forgot Password?</a></p>
+      <small *ngIf="loginForm.controls.email?.hasError('email') && loginForm.controls.email?.touched"
+             style="color: rgb(241, 33, 33); font-size: medium;">
+        ❌ Please enter a valid email address!
+      </small><br>
+      <button (click)="login()" [disabled]="loginForm.invalid">Login</button>
+    </form><br>
+    <p>Didn't register yet?
+    <a  style="color:rgb(168, 7, 7)" class="cursor-pointer ml-2" [routerLink]="['/register']">Signup</a></p> 
+  </div>
+</div>
