@@ -6,7 +6,7 @@ import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from '../home/home.component';
-import { ForgotComponent } from '../../forgot/forgot.component';
+import { ForgotComponent } from '../forgot/forgot.component';
 @Component({
   selector: 'app-login',
   standalone: true,
