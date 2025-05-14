@@ -1,0 +1,35 @@
+<div class="container mt-4">
+    <h2>Manage Customers</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{ user.name }}</td>
+                <td>{{ user.email }}</td>
+                <td>
+                    <button mat-button color="warn" (click)="deleteUser(user.email)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- Edit User Form (Shows when editing) 
+<div *ngIf="editingUser">
+    <h3>Edit User</h3>
+    <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput [(ngModel)]="editingUser.name">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput [(ngModel)]="editingUser.email">
+    </mat-form-field>
+    <button mat-button color="primary" (click)="updateUser()">Save</button>
+    <button mat-button (click)="cancelEdit()">Cancel</button>
+</div>-->
